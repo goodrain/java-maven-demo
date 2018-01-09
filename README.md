@@ -15,6 +15,4 @@ $ java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*
 
 ## 部署到云帮
 
-按照 [新建应用-源码构建](https://www.rainbond.com/docs/stable/user-lang-docs/java/docs/stable/user-app-docs/addapp/addapp-code.html) 的步骤操作，当代码提交完成后，平台就能够识别出项目所使用的语言来。如下图所示：
-
-![](https://static.goodrain.com/images/acp/docs/code-docs/lang-java-maven.png)
+按照 [新建应用-源码构建](https://www.rainbond.com/docs/stable/user-lang-docs/java/docs/stable/user-app-docs/addapp/addapp-code.html) 的步骤操作，当代码提交完成后，平台就能够识别出项目所使用的语言。
