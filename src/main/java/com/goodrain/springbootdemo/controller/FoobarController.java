@@ -1,6 +1,7 @@
 package com.goodrain.springbootdemo.controller;
 
 import com.goodrain.springbootdemo.service.FoobarService;
+import com.goodrain.springbootdemo.vo.DBConnInfoRespVO;
 import com.goodrain.springbootdemo.vo.GreetingReqVO;
 import com.goodrain.springbootdemo.vo.RestResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,17 @@ public class FoobarController {
         res.setCode("4000");
         res.setMsg("");
         res.setData(greetingReqVO.getName());
+        return res;
+    }
+
+    @GetMapping("/db-info")
+    public RestResponse<DBConnInfoRespVO> getDBConnInfo() {
+        DBConnInfoRespVO dbConnInfo = foobarService.getDBConnInfo();
+        RestResponse<DBConnInfoRespVO> res = new RestResponse<>();
+        res.setSuccess(0);
+        res.setCode("5000");
+        res.setMsg("");
+        res.setData(dbConnInfo);
         return res;
     }
 }

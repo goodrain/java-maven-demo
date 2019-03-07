@@ -16,14 +16,13 @@ public class DBConnPool {
      */
     private DBConnPool() {
 
-        String driverClassName = System.getenv("MYSQL_JDBC_DRIVER_CLASS_NAME").equals("")
-                ? "com.mysql.cj.jdbc.Driver" : System.getenv("MYSQL_JDBC_DRIVER_CLASS_NAME");
+        String driverClassName = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://"
                 + System.getenv("MYSQL_HOST") + ":"
                 + System.getenv("MYSQL_PORT") + "/"
                 + System.getenv("MYSQL_DATABASE") + "?characterEncoding=utf8";
         String user = System.getenv("MYSQL_USER");
-        String password = System.getenv("MYSQL_PASS");
+        String password = System.getenv("MYSQL_PASSWORD");
 
         // 数据库连接池对象
         cpds = new ComboPooledDataSource();
