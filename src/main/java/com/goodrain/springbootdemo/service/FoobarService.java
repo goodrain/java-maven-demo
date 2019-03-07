@@ -1,5 +1,6 @@
 package com.goodrain.springbootdemo.service;
 
+import com.goodrain.springbootdemo.vo.DBConnInfoRespVO;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -15,5 +16,15 @@ public class FoobarService {
             result.add(e.getKey() + "=" + e.getValue());
         }
         return result;
+    }
+
+    public DBConnInfoRespVO getDBConnInfo() {
+        DBConnInfoRespVO res = new DBConnInfoRespVO();
+        res.setHost(System.getenv("MYSQL_HOST"));
+        res.setPort(System.getenv("MYSQL_PORT"));
+        res.setUser(System.getenv("MYSQL_USER"));
+        res.setPassword(System.getenv("MYSQL_PASSWORD"));
+        res.setDatabase(System.getenv("MYSQL_DATABASE"));
+        return res;
     }
 }

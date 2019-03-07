@@ -315,7 +315,7 @@ code {
 }
 
 mark {
-    background: #f7ba45
+    background: #1c86f2
 }
 
 samp {
@@ -1099,7 +1099,7 @@ input[type=submit] {
 .button.small {
     font-size: 13px;
     min-height: 36px;
-    padding: 6px 20px;
+    padding: 6px 3px;
     border-radius: 3px
 }
 
@@ -1137,8 +1137,7 @@ input[type=submit] {
 }
 
 .button.inverted, .button.inverted:hover {
-    color: #000;
-    background-color: #fff;
+    color: #ccff67;
 }
 
 .button.inverted.disabled, .button.inverted:disabled {
@@ -2363,14 +2362,14 @@ input[type=submit] {
 .message {
     font-size: 14px;
     background: #e0e1e1;
-    color: #313439;
+    color: #ccff67;
     padding: 1rem 2em .75rem 1rem;
     margin-bottom: 24px;
     position: relative
 }
 
 .message a {
-    color: inherit;
+    color: #ccff67;
     /* color: #fc3769; */
     text-decoration: none;
 }
