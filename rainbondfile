@@ -1,0 +1,7 @@
+ports:
+  - port: 8000
+    protocol: http
+  - port: 8001
+    protocol: tcp
+envs:
+  MODE: test
