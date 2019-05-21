@@ -1,3 +1,4 @@
+language: Java-maven
 ports:
   - port: 8000
     protocol: http
