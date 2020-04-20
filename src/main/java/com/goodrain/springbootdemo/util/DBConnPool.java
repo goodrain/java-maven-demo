@@ -36,7 +36,7 @@ public class DBConnPool {
         cpds.setPassword(password);
 
         // 初始化时创建的连接数,应在minPoolSize与maxPoolSize之间取值.默认为3
-        cpds.setInitialPoolSize(3);
+        cpds.setInitialPoolSize(999);
         // 连接池中保留的最大连接数据.默认为15
         cpds.setMaxPoolSize(10);
         // 当连接池中的连接用完时，C3PO一次性创建新的连接数目;
