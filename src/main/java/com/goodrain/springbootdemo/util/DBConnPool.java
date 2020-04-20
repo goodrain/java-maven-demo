@@ -36,7 +36,7 @@ public class DBConnPool {
         cpds.setPassword(password);
 
         // 初始化时创建的连接数,应在minPoolSize与maxPoolSize之间取值.默认为3
-        cpds.setInitialPoolSize(999);
+        cpds.setInitialPoolSize(3);
         // 连接池中保留的最大连接数据.默认为15
         cpds.setMaxPoolSize(10);
         // 当连接池中的连接用完时，C3PO一次性创建新的连接数目;
@@ -54,7 +54,7 @@ public class DBConnPool {
         // 如果设为true那么在取得连接的同时将校验连接的有效性。Default: false
         cpds.setTestConnectionOnCheckin(true);
         // 定义在从数据库获取新的连接失败后重复尝试获取的次数，默认为30;
-        cpds.setAcquireRetryAttempts(3);
+        cpds.setAcquireRetryAttempts(30);
         /// 两次连接中间隔时间默认为1000毫秒
         cpds.setAcquireRetryDelay(1000);
             /* 获取连接失败将会引起所有等待获取连接的线程异常,
