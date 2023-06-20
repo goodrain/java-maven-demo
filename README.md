@@ -1,4 +1,4 @@
-# java-maven-demo
+# java maven demo
 Maven Demo Project
 -- Update project
 New line for patch ---
